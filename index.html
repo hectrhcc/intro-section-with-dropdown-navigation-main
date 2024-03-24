@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header>
+      <img src="./images/logo.svg" alt="logo" >
+      <img class="hamburger-menu" src="./images/icon-menu.svg" alt="menu">
+      <nav>
+        <div class="back"></div>
+          <div class="front">
+            <div class="close-img-container">
+            <img class="cerrar" src="./images/icon-close-menu.svg" alt="cerrar">
+            </div>
+            <ul>
+              <li class="features-ul-container">
+                <button id="features-btn" class="submenu-btn" ">Features<img id="features-btn-arrow" src="./images/icon-arrow-down.svg" alt="flecha abajo"> </button>                
+              </li>
+              <ul class="features-ul">
+                <li>
+                 <img src="./images/icon-todo.svg" alt="hacer">
+                  <span>Todo List</span>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="icono calendario">
+                  <span>Calendar</span>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="icono recuerdo">
+                  <span>Reminders</span>
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="icono planear">
+                  <span>Planning</span>
+                </li>
+              </ul>
+              <li class="company-ul-container">
+              <button id="company-btn" class="submenu-btn" >Company<img  id="company-btn-arrow" src="./images/icon-arrow-down.svg" alt="flecha abajo"></button>
+              
+              <ul class="company-ul">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+
+              <li class="ultima">
+                Careers
+              </li>
+              <li class="final">
+                About
+              </li>
+            </ul>
+            <div class="btns-container">
+              <button class="login-btn">Login</button>
+              <button class="register-btn">Register</button>
+            </div>
+          
+       
+      </nav>
+  </header>
+
+  <main>
+<section>
+  <h2>Make remote work</h2>
+  <p>  Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</p>
+    <button class="ultimayfinal"> Learn more</button>
+    <div class="logos-container">
+      <img class="databiz" src="./images/client-databiz.svg" alt="databiz cliente">
+      <img class="audio" src="./images/client-audiophile.svg" alt="audiofilo cliente">
+      <img class="meet" src="./images/client-meet.svg" alt="meet cliente">
+      <img class="maker" src="./images/client-maker.svg" alt="hacedor">
+    </div>
+</section>
+<picture>
+  <source srcset="./images/image-hero-mobile.png" media="(max-width:1023px)">
+  <source srcset="./images/image-hero-desktop.png" media="(min-width:1024px)">
+  <img class="hero-image" src="./images/image-hero-mobile.png" alt="movil heroe">
+
+</picture>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/hectrhcc" target="_blank">Héctor</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+:root{
+
+
+--Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Epilogue;
+    src: url(./fuente/Epilogue/Epilogue-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Epilogue';
+    background-color: var(--Almost-White);
+    color:var(--Almost-Black);
+    font-size: 18px;
+}
+
+button{
+    font-family: 'Epilogue';
+    background-color: var(--Almost-White);
+    border: none;
+    cursor: pointer;
+    color: var(--Medium-Gray);
+    font-size: 1em;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 16px 24px;
+    & nav{
+        display: none;
+        color: var(--Medium-Gray);
+        & .back{
+            background-color: var(--Medium-Gray);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 780px;
+            opacity: 0.75;
+        }
+        & .front{
+            background-color: var(--Almost-White);
+            width:240px;
+            position: absolute;
+            top:0;
+            right: 0;
+            height: 780px;
+            padding: 20px;
+        }
+        & .close-img-container{
+            text-align: right;
+            cursor: pointer;
+        }
+        & li{
+            list-style: none;
+            cursor: pointer;
+            margin-bottom: 26px;
+            
+
+        }
+        & .company-ul, .features-ul{
+            margin-left: 28px;
+            display: none;
+
+        }
+        & .submenu-btn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 24px 0;
+            width: 110px;
+            height: 26px;
+        }
+        & .btns-container{
+            position: absolute;
+            bottom: 124px;
+            align-items: center;
+
+        }
+        & .btn{
+            display: block;
+            background-color: var(--Almost-White);
+            color: var(--Medium-Gray);
+            font-size: 0.875em;
+            cursor: pointer;
+        }
+        & .login-btn{
+            display: block;
+            margin: 0 auto 15px;
+            &:hover{
+                color: black;
+                font-weight: bold;
+            }
+        }
+
+        & .register-btn{
+            display: block;
+            margin: 0 auto ;
+            width:200px;
+            height:46px ;
+            background-color: var(--Almost-White);
+            border: 1px solid var(--Almost-Black);
+            border-radius:13px;
+            padding: 8px 25px; /* padding: 8px 50px;*/
+            &:hover{
+                color: black;
+                font-weight: bold;
+                border: 2px solid Black;
+            }
+        }
+    }
+    & .hamburger-menu{
+           /* border:1px solid var(--Almost-Black) ;
+            width:195px;
+            height: 42px;
+            border-radius: 14px;*/
+            cursor: pointer;
+        
+    }
+}
+
+.submenu-btn, .ultima, .final{
+    &:hover{
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.ultimayfinal{
+    &:hover{
+        background-color: var(--Almost-White);
+        color: var(--Almost-Black);
+        border: 1px solid black;
+        font-weight: bold;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column-reverse;
+    & .hero-image{
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    & h2{
+        text-align: center;
+        font-size: 2.25em;
+        margin-bottom: 16px;
+        
+    }
+    & p{
+        text-align: center;
+        line-height: 26px;
+        color:var(--Medium-Gray);
+        margin: 0 16px 24px;
+        font-size:0.89rem;
+        font-weight: bold;
+    }
+
+    & button{
+        background-color: var(--Almost-Black);
+        color: var(--Almost-White);
+        width:136px;
+        height: 48px;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto 52px;
+        & :hover{
+            background-color: var(--Almost-White);
+            color: var(--Almost-Black);
+            border: 1px solid var(--Almost-Black);
+        }
+    }
+    & .logos-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0  16px ;
+        margin-bottom: 96px;
+        
+    }
+    & .databiz{
+        width:81px;
+    }
+    & .audio{
+        width: 52px;
+    }
+    & .meet{
+        width: 64px;
+    }
+    & .maker{
+        width: 59px;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (width >768px){
+    header{
+       & .hamburger-menu{
+           /* display: none;*/
+           visibility: hidden;
+        }
+    &  nav{
+            margin-left: 24px;
+            display: block;
+            width: 100%;
+            height:100%;
+        & .back{
+            visibility: hidden;
+        }
+        & .front{
+            position: static;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+            
+        }
+
+        & .close-img-container{
+            visibility: hidden;
+        }
+
+        & ul{
+            display: flex;
+            align-items: center;
+            width: 378px;
+            justify-content: space-between;
+        }
+        & li{
+            margin: 0;
+        }
+
+        & .submenu-btn{
+            margin:0;
+        }
+        & .btns-container{
+            display: flex;
+            position: static;
+            width: 182px;
+            justify-content: space-between;
+        }
+        & .features-ul, .company-ul{
+            width:153px;
+            height: 160px;
+            position: absolute;
+            padding: 18px 24px;
+            font-size: 0.875em;
+            top:35px;
+            background-color: var(--Almost-White);
+            box-shadow: 0pc 10px 40px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            & li{
+                margin-bottom: 16px;
+            }
+            
+        }
+        & .company-ul-container, .features-ul-container{
+            position: relative;
+        }
+        & #company-btn, #features-btn{
+                width: 100px;
+        }
+        & .features-ul{
+            left:105px;
+            top:69px;
+            
+            height: 180px;
+        }
+        
+        & .company-ul{
+            left:-30px ;
+        
+        }
+        }
+     
+        & .login-btn{
+            padding-top:16px;
+           padding-left:8px;
+        }
+        & .register-btn{
+           
+            position: relative;
+            left:20%;
+            padding: 8px 16px;
+        }
+
+     
+        }
+       
+
+    main{
+        
+        & h2 {
+            font-size: 2.625em;
+        }
+        & p{
+            width: 600px;
+            font-size: 1.125em;
+            margin: 40px auto;
+        }
+        & button{
+            width: 163px;
+            height: 56px;
+            font-size: 18px;
+            margin-bottom:46px;
+        }
+        & picture{
+            width: 80%;
+            margin: 24px auto;
+        }
+
+    }
+    
+}
+@media (width>1024px){
+    header{
+        margin:21px 80px 67px;
+        & nav {
+            margin-left: 0px;
+            & .features-ul{
+                left:230px;
+                top:69px;
+            
+                height: 205px;
+            }
+            
+            & .company-ul{
+                left:-30px ;
+            
+            }
+    }   
+        & .features-ul-container, .company-ul-container{
+            position: relative;
+            right:210px;
+        }
+        & li{
+            position: relative;
+            right:1px;
+        }
+        & .ultima{
+            position: relative;
+            left:-49%;
+            margin:0;
+            padding: 0;
+        }
+        & .final{
+            position: relative;
+            left:-39%;
+            margin:0;
+            padding: 0;
+        }
+    }
+    main{
+        flex-direction: row;
+        margin: 0 180px 20px 165px;
+        & picture{
+        width: 400px;
+        margin: 0;
+        }
+        & h2{
+            text-align: left;
+            font-size: 4.5em;
+            margin: 100px 0 48px;
+            width: 549px;
+        }
+        & p{
+            text-align: left;
+            font-size: 1.12em; /*18px*/
+            width: 445px;
+            font-weight: 500;
+            margin: 0 0 25px;
+        }
+        & button{
+            margin: 0 0 116px;
+        }   
+        
+}
+
+}
